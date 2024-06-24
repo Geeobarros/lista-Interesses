@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de interesses</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Meus Interesses e Desejos</h1>
+        </header>
+
+        <div class="form">
+            <input type="text" id="input-interesse" placeholder="Digite um interesse" onkeyup="addEnter(event)">
+
+            <button onclick="adicionarInteresse()" id="add-Interesse">+</button>
+
+        </div>
+        <div class="list">
+            <ul id="lista-interesses"></ul>
+            <div>
+            <button ondblclick="limparLista()" class="btn_limparLista">Limpar lista</button>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="news" id="news" bla>
+        <div>
+            <span>Notícia patrocinada</span>
+        </div>
+        <p id="title-news-today">
+
+        </p>
+    </div>
+
+
+    <script src="./src/scripts/lista.js"></script>
+</body>
+
+</html>
